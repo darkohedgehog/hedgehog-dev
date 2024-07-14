@@ -28,19 +28,19 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem 
-        className='gap-1 flex'
+        className='gap-1 flex text-accent dark:text-accentDark'
         onClick={() => setTheme("light")}>
         <MdOutlineLightMode />
           {t('title1')}
         </DropdownMenuItem>
         <DropdownMenuItem 
-        className='gap-1 flex'
+        className='gap-1 flex text-accent dark:text-accentDark'
         onClick={() => setTheme("dark")}>
         <MdOutlineDarkMode />
         {t('title2')}
         </DropdownMenuItem>
         <DropdownMenuItem 
-        className='gap-1 flex'
+        className='gap-1 flex text-accent dark:text-accentDark'
         onClick={() => setTheme("system")}>
         <MdOutlineSystemSecurityUpdateGood />
         {t('title3')}

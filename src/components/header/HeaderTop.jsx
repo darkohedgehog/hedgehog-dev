@@ -12,7 +12,7 @@ const HeaderTop = () => {
               <Link href={'/'} prefetch={true}>
                 <Logo />
               </Link>
-              <div className="flex items-center gap-4 md:gap-8">
+              <div className="flex items-center gap-4 md:gap-8 text-accent dark:text-accentDark">
                 <Socials />
                 <ModeToggle />
               </div>

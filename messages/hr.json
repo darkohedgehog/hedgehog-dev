@@ -16,6 +16,17 @@
         "blog": "Blog",
         "contact": "Kontakt"
       },
+      "HeroSection": {
+        "title": "Pozdrav! Ja sam Darko, React.js Developer iz Hrvatske."
+      },
+      "HomeFlipWords": {
+        "title1": "bolje",
+        "title2": "atraktivne",
+        "title3": "lijepe",
+        "title4": "moderne",
+        "description1": "Gradite",
+        "description2": "web stranice sa Ježurkom"
+      },
       "About": {
         "title": "Pozdrav!",
         "description": "Ovo je proba"

@@ -16,6 +16,17 @@
         "blog": "Blog",
         "contact": "Contact"
       },
+      "HeroSection": {
+        "title": "Hi! I'm Darko, a React.js Developer based in Croatia."
+      },
+      "HomeFlipWords": {
+        "title1": "better",
+        "title2": "cute",
+        "title3": "beautiful",
+        "title4": "modern",
+        "description1": "Build",
+        "description2": "websites with Hedgehog"
+      },
       "About": {
         "title": "Hello",
         "description": "This is a test!"
