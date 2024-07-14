@@ -10,6 +10,12 @@
         "title2": "Dark",
         "title3": "System"
       },
+      "NavData": {
+        "home": "Home",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
       "About": {
         "title": "Hello",
         "description": "This is a test!"

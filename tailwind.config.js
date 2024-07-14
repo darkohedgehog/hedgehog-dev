@@ -42,6 +42,17 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         aurora: "aurora 60s linear infinite",
       },
+      colors: {
+        dark: "#1b1b1b",
+        light: "#fff",
+        accent: "#7B00D3",
+        accentDark: "#9f86c0",
+        gray: "#747474",
+        darkblue: '#0a192f',
+        darkpurple: '#6a0dad',
+        'card-bg-light': '#e4d9ff',
+        'card-bg-dark': '#011638',
+      },
     },
   },
   plugins: [

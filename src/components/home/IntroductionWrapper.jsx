@@ -1,18 +1,12 @@
-"use client";
-import dynamic from 'next/dynamic';
-import { Suspense } from 'react';
-
-const Introduction = dynamic(() => import('./Introduction').then(mod => mod.Introduction), {
-  ssr: false,
-  suspense: true,
-});
+import React from 'react'
+import { Introduction } from './Introduction'
 
 const IntroductionWrapper = () => {
   return (
-    <Suspense fallback={<div>Učitavam...</div>}>
+    <div>
       <Introduction />
-    </Suspense>
-  );
-};
+    </div>
+  )
+}
 
-export default IntroductionWrapper;
+export default IntroductionWrapper

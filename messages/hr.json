@@ -10,6 +10,12 @@
         "title2": "Tamna",
         "title3": "Sistem"
       },
+      "NavData": {
+        "home": "Naslovna",
+        "about": "O nama",
+        "blog": "Blog",
+        "contact": "Kontakt"
+      },
       "About": {
         "title": "Pozdrav!",
         "description": "Ovo je proba"

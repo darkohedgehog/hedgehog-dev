@@ -1,11 +1,11 @@
-"use client"
+
 import Image from 'next/image'
-import React, { memo } from 'react'
+import React from 'react'
 import { HomeFlipWords } from './HomeFlipWords'
 
 const image = 'https://res.cloudinary.com/dhkmlqg4o/image/upload/v1720819788/hedgehog-dev/hedgehogbanner2_fc1jvh.webp'
 
-const HeroSection = memo( () => {
+const HeroSection = () => {
   return (
     <section>
       <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
@@ -45,6 +45,6 @@ const HeroSection = memo( () => {
       </div>
     </section>
   )
-})
+}
 
 export default HeroSection
