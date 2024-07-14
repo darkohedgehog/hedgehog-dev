@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React, { memo } from 'react'
 import { HomeFlipWords } from './HomeFlipWords'
@@ -16,6 +17,7 @@ const HeroSection = memo( () => {
                 src={image}
                 width={400}
                 height={400}
+                priority={true}
                 className="absolute inset-0 h-full lg:h-[700px] w-full object-cover rounded-md shadow-md shadow-gray-400"
               />
             </div>
