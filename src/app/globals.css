@@ -3,31 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --white-gradient: repeating-linear-gradient(100deg, var(--white) 0%, var(--white) 7%, var(--transparent) 10%, var(--transparent) 12%, var(--white) 16%);
+  --dark-gradient: repeating-linear-gradient(100deg, var(--black) 0%, var(--black) 7%, var(--transparent) 10%, var(--transparent) 12%, var(--black) 16%);
+  --aurora: repeating-linear-gradient(100deg, var(--blue-500) 10%, var(--indigo-300) 15%, var(--blue-300) 20%, var(--violet-200) 25%, var(--blue-400) 30%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.background-gradient {
+  background-image: var(--white-gradient), var(--aurora);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: 300%, 200%;
+  background-position: 50% 50%, 50% 50%;
+  filter: blur(10px) invert(1);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.dark .background-gradient {
+  background-image: var(--dark-gradient), var(--aurora);
+  filter: blur(10px) invert(0);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.background-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--white-gradient), var(--aurora);
+  background-size: 200%, 100%;
+  animation: aurora 60s linear infinite;
+  background-attachment: fixed;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.dark .background-gradient::after {
+  background-image: var(--dark-gradient), var(--aurora);
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.mask-radial-gradient {
+  mask-image: radial-gradient(ellipse at 100% 0%, black 10%, var(--transparent) 70%);
 }

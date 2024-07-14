@@ -1,0 +1,17 @@
+{
+    "Home": {
+      "title": "Hello world!"
+    },
+    "LangSwitch": {
+        "title": "Choose your preferred language"
+      },
+      "useTheme": {
+        "title1": "Light",
+        "title2": "Dark",
+        "title3": "System"
+      },
+      "About": {
+        "title": "Hello",
+        "description": "This is a test!"
+      }
+  }

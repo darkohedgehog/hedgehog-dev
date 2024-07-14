@@ -1,0 +1,17 @@
+{
+    "Home": {
+      "title": "Pozdrav!"
+    },
+    "LangSwitch": {
+        "title": "Izaberite željeni jezik"
+      },
+      "useTheme": {
+        "title1": "Svjetla",
+        "title2": "Tamna",
+        "title3": "Sistem"
+      },
+      "About": {
+        "title": "Pozdrav!",
+        "description": "Ovo je proba"
+      }
+}
