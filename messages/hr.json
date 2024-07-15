@@ -27,6 +27,34 @@
         "description1": "Gradite",
         "description2": "web stranice sa Ježurkom"
       },
+      "IntroductionWrapper": {
+        "title1": "Najnoviji trendovi garantiraju",
+        "title2": "moderan",
+        "title3": "izgled i funkcionalnost",
+        "title4": "Naš pristup pri izradi",
+        "title5": "web",
+        "title6": "aplikacija i stranica"
+      },
+      "Introduction": {
+        "title1": "Poseban detalj na korisničko iskustvo",
+        "title2": "Predstavite sebe na najbolji način.",
+        "title3": "Brzina i perfomanse",
+        "title4": "Obezbedite sebi brzu i modernu web stranicu.",
+        "title5": "Vizaulni indetitet",
+        "title6": "Budite prepoznatljivi na internetu uz jedinstven dizajn.",
+        "title7": "Moderne tehnologije",
+        "title8": "Koristimo najnovije trendove iz web industrije",
+        "title9": "Komunikacija sa klijentima",
+        "title10": "U stalnom smo kontaktu sa svojim klijentima i slušamo njihove potrebe",
+        "title11": "React.js popularan Javascript framerwork",
+        "title12": "Moderan",
+        "title13": "Tailwind CSS da stranice izgledaju ljepše",
+        "title14": "Atraktivan",
+        "title15": "Brzina i perfomanse uz SSR rendering",
+        "title16": "Perfomanse",
+        "title17": "Da li nam možete pomoći oko novog sadržaja na našoj stranici?",
+        "title18": "Naravno! Tu smo da pomognemo."
+      },
       "About": {
         "title": "Pozdrav!",
         "description": "Ovo je proba"

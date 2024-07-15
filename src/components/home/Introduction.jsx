@@ -11,25 +11,97 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
+import Avatar1 from '@/assets/icons/react-svgrepo.svg';
+import Avatar2 from '@/assets/icons/tailwindcss-icon-svgrepo.svg';
+import Avatar3 from '@/assets/icons/nextjs-svgrepo.svg';
+import Avatar4 from '@/assets/icons/trustedclient.svg';
 
 export function Introduction() {
+  const t = useTranslations('Introduction');
+
+  const items = [
+    {
+      title: (
+        <span>{t('title1')}</span>),
+      description: (
+        <span className="text-sm">
+          {t('title2')}
+        </span>
+      ),
+      header: <SkeletonOne />,
+      className: "md:col-span-1",
+      icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    },
+    {
+      title: (
+        <span>{t('title3')}</span>),
+      description: (
+        <span className="text-sm">
+          {t('title4')}
+        </span>
+      ),
+      header: <SkeletonTwo />,
+      className: "md:col-span-1",
+      icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    },
+    {
+      title: (
+        <span>{t('title5')}</span>),
+      description: (
+        <span className="text-sm">
+          {t('title6')}
+        </span>
+      ),
+      header: <SkeletonThree />,
+      className: "md:col-span-1",
+      icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    },
+    {
+      title: (
+        <span>{t('title7')}</span>),
+      description: (
+        <span className="text-sm">
+          {t('title8')}
+        </span>
+      ),
+      header: <SkeletonFour />,
+      className: "md:col-span-2",
+      icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    },
+
+    {
+      title: (
+        <span>{t('title9')}</span>),
+      description: (
+        <span className="text-sm">
+          {t('title10')}
+        </span>
+      ),
+      header: <SkeletonFive />,
+      className: "md:col-span-1",
+      icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    },
+  ];
+
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="w-full mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
           title={item.title}
           description={item.description}
           header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
+          className={cn("bg-card-bg-light dark:bg-card-bg-dark [&>p]:text-lg", item.className)}
           icon={item.icon}
         />
       ))}
     </BentoGrid>
   );
 }
+
 const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
 );
 
 const SkeletonOne = () => {
@@ -66,7 +138,7 @@ const SkeletonOne = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
@@ -88,6 +160,7 @@ const SkeletonOne = () => {
     </motion.div>
   );
 };
+
 const SkeletonTwo = () => {
   const variants = {
     initial: {
@@ -116,17 +189,18 @@ const SkeletonTwo = () => {
     >
       {arr.map((_, i) => (
         <motion.div
-          key={"skelenton-two" + i}
+          key={"skeleton-two" + i}
           variants={variants}
           style={{
             maxWidth: Math.random() * (100 - 40) + 40 + "%",
           }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
         ></motion.div>
       ))}
     </motion.div>
   );
 };
+
 const SkeletonThree = () => {
   const variants = {
     initial: {
@@ -157,7 +231,9 @@ const SkeletonThree = () => {
     </motion.div>
   );
 };
+
 const SkeletonFour = () => {
+  const t = useTranslations('Introduction');
   const first = {
     initial: {
       x: 20,
@@ -190,32 +266,34 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src={Avatar1}
           alt="avatar"
           height="100"
           width="100"
+          priority={false}
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Just code in Vanilla Javascript
+        {t('title11')}
         </p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
+        {t('title12')}
         </p>
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src={Avatar2}
           alt="avatar"
           height="100"
           width="100"
+          priority={false}
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is cool, you know
+        {t('title13')}
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
+        {t('title14')}
         </p>
       </motion.div>
       <motion.div
@@ -223,23 +301,26 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src={Avatar3}
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          priority={false}
+          className="rounded-full h-10 w-10 dark:bg-slate-400"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular, RSC, and Redux.
+        {t('title15')}
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
+        {t('title16')}
         </p>
       </motion.div>
     </motion.div>
   );
 };
+
 const SkeletonFive = () => {
+  const t = useTranslations('Introduction');
   const variants = {
     initial: {
       x: 0,
@@ -273,85 +354,27 @@ const SkeletonFive = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 items-start space-x-2 bg-white dark:bg-black"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src={Avatar4}
           alt="avatar"
           height="100"
           width="100"
+          priority={false}
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-neutral-500">
-          There are a lot of cool framerworks out there like React, Angular,
-          Vue, Svelte that can make your life ....
+        {t('title17')}
         </p>
       </motion.div>
       <motion.div
         variants={variantsSecond}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <p className="text-xs text-neutral-500">Use PHP.</p>
+        <p className="text-xs text-neutral-500">{t('title18')}</p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
       </motion.div>
     </motion.div>
   );
 };
-const items = [
-  {
-    title: "AI Content Generation",
-    description: (
-      <span className="text-sm">
-        Experience the power of AI in generating unique content.
-      </span>
-    ),
-    header: <SkeletonOne />,
-    className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Automated Proofreading",
-    description: (
-      <span className="text-sm">
-        Let AI handle the proofreading of your documents.
-      </span>
-    ),
-    header: <SkeletonTwo />,
-    className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Contextual Suggestions",
-    description: (
-      <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
-      </span>
-    ),
-    header: <SkeletonThree />,
-    className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Sentiment Analysis",
-    description: (
-      <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
-      </span>
-    ),
-    header: <SkeletonFour />,
-    className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
-
-  {
-    title: "Text Summarization",
-    description: (
-      <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
-      </span>
-    ),
-    header: <SkeletonFive />,
-    className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-  },
-];

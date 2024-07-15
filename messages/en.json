@@ -27,6 +27,34 @@
         "description1": "Build",
         "description2": "websites with Hedgehog"
       },
+      "IntroductionWrapper": {
+        "title1": "The latest trends guarantee a",
+        "title2": "modern",
+        "title3": "look and functionality",
+        "title4": "Our approach to creating",
+        "title5": "web",
+        "title6": "applications and websites"
+      },
+      "Introduction": {
+        "title1": "A special focus on the user experience",
+        "title2": "Present yourself in the best way.",
+        "title3": "Speed and performance",
+        "title4": "Ensure a fast and modern website for yourself.",
+        "title5": "Visual identity",
+        "title6": "Stand out on the internet with a unique design.",
+        "title7": "Modern technologies",
+        "title8": "We use the latest trends from the web industry",
+        "title9": "Communication with clients",
+        "title10": "We are in constant contact with our clients and listen to their needs.",
+        "title11": "React.js, a popular JavaScript framework",
+        "title12": "Modern",
+        "title13": "Tailwind CSS to make the pages look more beautiful",
+        "title14": "Attractive",
+        "title15": "Speed and performance with SSR rendering",
+        "title16": "Performance",
+        "title17": "Can you help us with the new content on our website?",
+        "title18": "Of course! We are here to help."
+      },
       "About": {
         "title": "Hello",
         "description": "This is a test!"

@@ -8,8 +8,8 @@ const image = 'https://res.cloudinary.com/dhkmlqg4o/image/upload/v1720819788/hed
 const HeroSection = () => {
   const t = useTranslations('HeroSection')
   return (
-    <section>
-      <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className='lg:px-28'>
+      <div className="mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10">
             <div className="relative h-64 sm:h-80 lg:h-full">
