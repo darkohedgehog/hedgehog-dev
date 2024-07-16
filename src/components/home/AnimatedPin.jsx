@@ -3,8 +3,10 @@ import React from "react";
 import { PinContainer } from "../ui/3d-pin";
 import Link from "next/link";
 import Image from "next/image";
-import Img1 from '@/assets/projects/social-banner.png';
+import Img1 from '@/assets/projects/elektro.png';
 import Img2 from '@/assets/projects/dizajn.png';
+import Img3 from '@/assets/projects/portfolio1.jpg';
+import Img4 from '@/assets/projects/sitoreklam.png';
 
 export function AnimatedPin() {
   const projects = [
@@ -14,7 +16,7 @@ export function AnimatedPin() {
       image: Img1,
       github: "https://github.com/darkohedgehog/zivic-elektro-strapi",
       live: "https://zivic-elektro.eu",
-      technologies: ["TailwindCSS", "Framer Motion"],
+      technologies: ["Next.js", "Strapi", "Gsap","TailwindCss"],
     },
     {
       title: "@Dizajn",
@@ -22,21 +24,23 @@ export function AnimatedPin() {
       image: Img2,
       github: "https://github.com/darkohedgehog/dizajn-studio",
       live: "https://reklame-dizajn.vercel.app/",
-      technologies: ["React", "Next.js"],
+      technologies: ["Next.js", "Sanity","Framer Motion"],
     },
     {
-      title: "Project Three",
-      description: "Description for project three.",
-      github: "https://github.com/user/project3",
-      live: "https://project3.com",
-      technologies: ["Node.js", "Express"],
+      title: "Portfolio",
+      description: "Izrada poslovnog portfolija",
+      image: Img3,
+      github: "https://github.com/darkohedgehog/Dragana-portfolio",
+      live: "https://dragana-portfolio.vercel.app/",
+      technologies: ["Vite", "TailwindCss", "Framer Motion"],
     },
     {
-      title: "Project Four",
-      description: "Description for project four.",
-      github: "https://github.com/user/project4",
-      live: "https://project4.com",
-      technologies: ["Vite", "Vue.js"],
+      title: "Sitoreklam",
+      description: "Proizvodnja ukrasnih kutija...",
+      image: Img4,
+      github: "https://github.com/darkohedgehog/sitoreklam",
+      live: "https://sitoreklam.vercel.app/",
+      technologies: ["Vite", "Three.js", "TailWindCss"],
     },
   ];
 
@@ -49,7 +53,7 @@ export function AnimatedPin() {
           href={project.live}
         >
           <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
-            <h3 className="max-w-xs pb-2 m-0 font-bold text-base text-slate-100">
+            <h3 className="max-w-xs pb-2 m-0 font-bold text-base text-accent dark:text-accentDark">
               {project.title}
             </h3>
             <div className="text-base m-0 p-0 font-normal">
@@ -65,22 +69,26 @@ export function AnimatedPin() {
                   height={100}
                   alt={project.title}
                   priority={false}
-                  className="w-full h-full rounded-md object-cover" />
+                  className="w-full h-32 rounded-md object-cover" />
               </div>
             )}
-            <div className="flex flex-col mt-4 space-y-2">
-              <Link href={project.github}
-                target="_blank" className="text-blue-400 hover:underline">
+            <div className="flex items-center justify-center mt-4 gap-6">
+              <Link 
+               href={project.github}
+               target="_blank"
+               className="text-blue-400 hover:underline">
                   GitHub
               </Link>
-              <Link href={project.live}
-                target="_blank" className="text-blue-400 hover:underline">
+              <Link 
+              href={project.live}
+              target="_blank"
+              className="text-blue-400 hover:underline">
                   Live Site
               </Link>
             </div>
             <div className="flex my-2 space-x-2">
               {project.technologies.map((tech, idx) => (
-                <span key={idx} className="text-xs bg-gray-800 px-2 py-1 rounded">
+                <span key={idx} className="text-xs text-accent dark:text-accentDark px-2 py-1 rounded">
                   {tech}
                 </span>
               ))}
