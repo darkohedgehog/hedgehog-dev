@@ -7,12 +7,14 @@ import Img1 from '@/assets/projects/elektro.png';
 import Img2 from '@/assets/projects/dizajn.png';
 import Img3 from '@/assets/projects/portfolio1.jpg';
 import Img4 from '@/assets/projects/sitoreklam.png';
+import { useTranslations } from 'next-intl';
 
 export function AnimatedPin() {
+  const t = useTranslations('AnimatedPin');
   const projects = [
     {
       title: "Živić-elektro",
-      description: "Web trgovina",
+      description: (<span>{t('description1')}</span>),
       image: Img1,
       github: "https://github.com/darkohedgehog/zivic-elektro-strapi",
       live: "https://zivic-elektro.eu",
@@ -20,7 +22,7 @@ export function AnimatedPin() {
     },
     {
       title: "@Dizajn",
-      description: "Izrada svjetlećih reklama",
+      description: (<span>{t('description2')}</span>),
       image: Img2,
       github: "https://github.com/darkohedgehog/dizajn-studio",
       live: "https://reklame-dizajn.vercel.app/",
@@ -28,7 +30,7 @@ export function AnimatedPin() {
     },
     {
       title: "Portfolio",
-      description: "Izrada poslovnog portfolija",
+      description: (<span>{t('description3')}</span>),
       image: Img3,
       github: "https://github.com/darkohedgehog/Dragana-portfolio",
       live: "https://dragana-portfolio.vercel.app/",
@@ -36,7 +38,7 @@ export function AnimatedPin() {
     },
     {
       title: "Sitoreklam",
-      description: "Proizvodnja ukrasnih kutija...",
+      description: (<span>{t('description4')}</span>),
       image: Img4,
       github: "https://github.com/darkohedgehog/sitoreklam",
       live: "https://sitoreklam.vercel.app/",
