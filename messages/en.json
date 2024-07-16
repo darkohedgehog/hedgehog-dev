@@ -61,6 +61,14 @@
         "description3": "Creation of a business portfolio",
         "description4": "Production of decorative boxes..."
       },
+      "Projects": {
+        "title1": "Take a look at some of",
+        "title2": "our",
+        "title3": "projects",
+        "title4": "You might find",
+        "title5": "inspiration",
+        "title6": "or an idea"
+      },
       "About": {
         "title": "Hello",
         "description": "This is a test!"

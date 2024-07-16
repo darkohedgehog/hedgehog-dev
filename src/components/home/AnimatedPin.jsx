@@ -47,7 +47,7 @@ export function AnimatedPin() {
   ];
 
   return (
-    <div className="h-full w-full lg:w-[1024px] grid grid-cols-1 lg:grid-cols-2 gap-16 mx-auto items-center p-8">
+    <div className="h-full w-full lg:w-[1024px] grid grid-cols-1 lg:grid-cols-2 gap-20 mx-auto items-center p-8">
       {projects.map((project, index) => (
         <PinContainer
           key={index}

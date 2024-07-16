@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
 
-
 const HeroSection = dynamic(() => import('@/components/home/HeroSection'), {
   ssr: false,
   suspense: true,
@@ -14,6 +13,10 @@ const IntroductionWrapper = dynamic(() => import('@/components/home/Introduction
   suspense: true,
 });
 const Projects = dynamic(() => import('@/components/home/Projects'), {
+  ssr: false,
+  suspense: true,
+});
+const ApproachWrapper = dynamic(() => import('@/components/home/ApproachWrapper'), {
   ssr: false,
   suspense: true,
 });
@@ -27,6 +30,7 @@ export default function HomePage({ params: { locale } }) {
       <HeroSection />
       <IntroductionWrapper />
       <Projects />
+      <ApproachWrapper />
     </Suspense>
   );
 }
