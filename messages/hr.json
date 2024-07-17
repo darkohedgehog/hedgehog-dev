@@ -12,7 +12,7 @@
       },
       "NavData": {
         "home": "Naslovna",
-        "about": "O nama",
+        "about": "O meni",
         "blog": "Blog",
         "contact": "Kontakt"
       },
@@ -31,7 +31,7 @@
         "title1": "Najnoviji trendovi garantiraju",
         "title2": "moderan",
         "title3": "izgled i funkcionalnost",
-        "title4": "Naš pristup pri izradi",
+        "title4": "Moj pristup pri izradi",
         "title5": "web",
         "title6": "aplikacija i stranica"
       },
@@ -79,6 +79,11 @@
         "title3": "Razvoj & postvljanje na web",
         "icon3": "Faza 3",
         "des3": "Ovdje se događa čarolija! Na temelju odobrenog dizajna, sve ću prevesti u funkcionalni kod i izgraditi vašu web stranicu od temelja."
+      },
+      "ApproachWrapper": {
+        "title1": "Moj",
+        "title2": "pristup",
+        "title3": "projektima"
       },
       "About": {
         "title": "Pozdrav!",

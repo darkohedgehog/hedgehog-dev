@@ -31,7 +31,7 @@
         "title1": "The latest trends guarantee a",
         "title2": "modern",
         "title3": "look and functionality",
-        "title4": "Our approach to creating",
+        "title4": "My approach to creating",
         "title5": "web",
         "title6": "applications and websites"
       },
@@ -80,7 +80,11 @@
         "icon3": "Phase 3",
         "des3": "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
       },
-
+      "ApproachWrapper": {
+        "title1": "My",
+        "title2": "approach",
+        "title3": "to projects"
+      },
       "About": {
         "title": "Hello",
         "description": "This is a test!"
