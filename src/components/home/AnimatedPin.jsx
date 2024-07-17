@@ -47,14 +47,14 @@ export function AnimatedPin() {
   ];
 
   return (
-    <div className="h-full w-full lg:w-[1024px] grid grid-cols-1 lg:grid-cols-2 gap-20 mx-auto items-center p-8">
+    <div className="h-full w-full lg:w-[1024px] grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 mx-auto items-center p-8">
       {projects.map((project, index) => (
         <PinContainer
           key={index}
           title={project.title}
           href={project.live}
         >
-          <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
+          <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem] lg:w-[24rem] lg:h-[22rem]">
             <h3 className="max-w-xs pb-2 m-0 font-bold text-base text-accent dark:text-accentDark">
               {project.title}
             </h3>
@@ -88,7 +88,7 @@ export function AnimatedPin() {
                   Live Site
               </Link>
             </div>
-            <div className="flex my-2 space-x-2">
+            <div className="flex mt-5 space-x-2">
               {project.technologies.map((tech, idx) => (
                 <span key={idx} className="text-xs text-accent dark:text-accentDark px-2 py-1 rounded">
                   {tech}
