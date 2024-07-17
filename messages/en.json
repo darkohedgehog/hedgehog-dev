@@ -16,6 +16,11 @@
         "blog": "Blog",
         "contact": "Contact"
       },
+      "FooterData": {
+        "privacy": "Privacy",
+        "complaint": "Complaint",
+        "contact": "Contact"
+      },
       "HeroSection": {
         "title": "Hi! I'm Darko, a React.js Developer based in Croatia.",
         "title2": "Contact me"

@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import LangSwitch from '@/components/header/LangSwitch';
 import HeaderTop from '@/components/header/HeaderTop';
 import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -37,6 +38,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
                   <HeaderTop />
                   <Nav />
                   {children}
+                  <Footer />
                 </div>
               </ThemeProvider>
             </NextIntlClientProvider>

@@ -16,6 +16,11 @@
         "blog": "Blog",
         "contact": "Kontakt"
       },
+      "FooterData": {
+        "privacy": "Pravila privatnosti",
+        "complaint": "Prigovor",
+        "contact": "Kontakt"
+      },
       "HeroSection": {
         "title": "Pozdrav! Ja sam Darko, React.js Developer iz Hrvatske.",
         "title2":"Kontakt"
