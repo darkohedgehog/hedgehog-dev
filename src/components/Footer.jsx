@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         <div className='flex items-center justify-center my-16 flex-col'>
             <h3 className='text-accent dark:text-accentDark text-sm mb-4 font-semibold'>
-                Budimo u kontaktu
+                {t('title')}
                 </h3>
         <span className="inline-flex mx-4">
                   <Link 
