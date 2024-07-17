@@ -17,7 +17,8 @@
         "contact": "Contact"
       },
       "HeroSection": {
-        "title": "Hi! I'm Darko, a React.js Developer based in Croatia."
+        "title": "Hi! I'm Darko, a React.js Developer based in Croatia.",
+        "title2": "Contact me"
       },
       "HomeFlipWords": {
         "title1": "better",
@@ -84,6 +85,13 @@
         "title1": "My",
         "title2": "approach",
         "title3": "to projects"
+      },
+      "OutroSection": {
+        "title1": "Ready to take",
+        "title2": "your",
+        "title3": "digital presence to the next level?",
+        "title4": "Reach out to me today and let's discuss how I can help you achieve your goals.",
+        "title5": " Contact Me"
       },
       "About": {
         "title": "Hello",

@@ -20,6 +20,10 @@ const ApproachWrapper = dynamic(() => import('@/components/home/ApproachWrapper'
   ssr: false,
   suspense: true,
 });
+const OutroSection = dynamic(() => import('@/components/home/OutroSection'), {
+  ssr: false,
+  suspense: true,
+});
 
 export default function HomePage({ params: { locale } }) {
   unstable_setRequestLocale(locale);
@@ -31,6 +35,7 @@ export default function HomePage({ params: { locale } }) {
       <IntroductionWrapper />
       <Projects />
       <ApproachWrapper />
+      <OutroSection />
     </Suspense>
   );
 }

@@ -17,7 +17,8 @@
         "contact": "Kontakt"
       },
       "HeroSection": {
-        "title": "Pozdrav! Ja sam Darko, React.js Developer iz Hrvatske."
+        "title": "Pozdrav! Ja sam Darko, React.js Developer iz Hrvatske.",
+        "title2":"Kontakt"
       },
       "HomeFlipWords": {
         "title1": "bolje",
@@ -72,18 +73,25 @@
       "Approach": {
         "title1": "Planiranje & strategija",
         "icon1": "Faza 1",
-        "des1": "Surađivat ćemo na kreiranju ciljeva Vaše web stranice, ciljne publike i na funkcionalnosti. Razgovarat ćemo o stvarima poput strukture stranice, navigacije i sadržajem",
+        "des1": "Surađivat ćemo na kreiranju ciljeva Vaše web stranice, ciljne publike i na funkcionalnosti. Razgovarat ćemo o stvarima poput strukture stranice, navigacije i sadržaja",
         "title2": "Razvoj & prikaz napretka",
         "icon2": "Faza 2",
         "des2": "Kad se dogovorimo o planu, krećem u kodiranje. Od početnih skica do uglađenog koda, obavještavam Vas o svakom koraku.",
         "title3": "Razvoj & postvljanje na web",
         "icon3": "Faza 3",
         "des3": "Ovdje se događa čarolija! Na temelju odobrenog dizajna, sve ću prevesti u funkcionalni kod i izgraditi Vašu web stranicu od temelja."
-      },
+      }, 
       "ApproachWrapper": {
         "title1": "Moj",
         "title2": "pristup",
         "title3": "projektima"
+      },
+      "OutroSection": {
+        "title1": "Spremni ste podići",
+        "title2": "vašu",
+        "title3": "digitalnu prisutnost na višu razinu?",
+        "title4": "Kontaktirajte me danas i razgovarajmo o tome kako vam mogu pomoći u postizanju vaših ciljeva.",
+        "title5": "Kontakt"
       },
       "About": {
         "title": "Pozdrav!",
