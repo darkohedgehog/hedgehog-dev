@@ -69,6 +69,17 @@
         "title5": "inspiraciju",
         "title6": "ili ideju"
       },
+      "Approach": {
+        "title1": "Planiranje & strategija",
+        "icon1": "Faza 1",
+        "des1": "Surađivat ćemo na kreiranju ciljeva Vaše web stranice, ciljne publike i na funkcionalnosti. Razgovarat ćemo o stvarima poput strukture stranice, navigacije i sadržajem",
+        "title2": "Razvoj & prikaz napretka",
+        "icon2": "Faza 2",
+        "des2": "Kad se dogovorimo o planu, krećem u kodiranje. Od početnih skica do uglađenog koda, obavještavam Vas o svakom koraku.",
+        "title3": "Razvoj & postvljanje na web",
+        "icon3": "Faza 3",
+        "des3": "Ovdje se događa čarolija! Na temelju odobrenog dizajna, sve ću prevesti u funkcionalni kod i izgraditi vašu web stranicu od temelja."
+      },
       "About": {
         "title": "Pozdrav!",
         "description": "Ovo je proba"

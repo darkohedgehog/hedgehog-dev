@@ -69,6 +69,18 @@
         "title5": "inspiration",
         "title6": "or an idea"
       },
+      "Approach": {
+        "title1": "Planning & Strategy",
+        "icon1": "Phase 1",
+        "des1": "We will collaborate on setting goals for your website, target audience, and functionality. We will discuss things like site structure, navigation, and content.",
+        "title2": "Development & Progress Updates",
+        "icon2": "Phase 2",
+        "des2": "Once we agree on the plan, I start coding. From initial sketches to polished code, I keep you updated every step of the way.",
+        "title3": "Development & Launch",
+        "icon3": "Phase 3",
+        "des3": "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+      },
+
       "About": {
         "title": "Hello",
         "description": "This is a test!"
