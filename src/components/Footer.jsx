@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
-import { FiFacebook } from "react-icons/fi";
 import { RiMessengerLine, RiLinkedinBoxFill, RiNextjsFill } from "react-icons/ri";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { SiSanity, SiGithub } from "react-icons/si";
@@ -62,13 +61,13 @@ const Footer = () => {
                   </Link>
                   <Link 
                   className="text-blue-500 mx-2" 
-                  href={'https://business.facebook.com/latest/inbox/messenger?asset_id=137597493551735&business_id=1133499703746344'}
+                  href={'https://www.facebook.com/messages/t/100074828598715/?locale=hr_HR'}
                   target='blank'>
                   <RiMessengerLine className='h-6 w-6' />
                   </Link>
                   <Link 
                   className="mx-2 text-blue-500" 
-                  href={'mailto:prodaja@zivic-elektro.com'} target='blank'>
+                  href={'mailto:zivic.darko79@gmail.com'} target='blank'>
                   <MdOutlineAlternateEmail className='h-6 w-6' />
                   </Link>
                   <Link 
@@ -104,9 +103,7 @@ const Footer = () => {
         </div>
         </span>
     </div>
-</footer>
-
-
+  </footer>
     </>
   )
 }
