@@ -102,5 +102,17 @@
       "About": {
         "title": "Hello",
         "description": "This is a test!"
+      },
+      "AboutSection": {
+        "title1": "Expert Web Development for",
+        "title2": "Modern Solutions",
+        "paragraph1": "With over 15 years of experience as an executive manager in commerce and finance, along with a dedicated year in web development, I offer a unique blend of expertise to the table.",
+        "paragraph2": "My solid foundation in executive management has honed my leadership and strategic skills, enabling me to drive successful outcomes in the business world.",
+        "paragraph3": "I've walked in your shoes and understand the market's needs, ensuring that I can relate to and fulfill your requirements effectively.",
+        "paragraph4": "In the realm of web development, my passion has led me to master various programming languages and frameworks, including HTML5, CSS3, JavaScript, React.js, Next.js, and TailwindCSS for styling.",
+        "paragraph5": "My proficiency in these technologies allows me to craft dynamic and interactive websites, ensuring a seamless user experience that not only meets but exceeds expectations.",
+        "paragraph6": "I am constantly seeking opportunities to expand my knowledge and explore innovative solutions to deliver exceptional results.",
+        "paragraph7": "Whether you're looking for a skilled freelancer to tackle specific projects or a dedicated partner to drive your business forward, I am ready to collaborate and bring your vision to life.",
+        "paragraph8":"Let's work together to create impactful and efficient solutions that cater to the ever-evolving demands of the market."
       }
   }

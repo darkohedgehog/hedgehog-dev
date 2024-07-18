@@ -102,5 +102,17 @@
       "About": {
         "title": "Pozdrav!",
         "description": "Ovo je proba"
-      }
+      },
+      "AboutSection": {
+        "title1": "Stručni web razvoj za",
+        "title2": "moderna rješenja",
+        "paragraph1": "S više od 15 godina iskustva kao izvršni menadžer u oblasti trgovine i financija, uz posvećenu godinu dana u web razvoju, nudim jedinstvenu kombinaciju stručnosti.",
+        "paragraph2": "Moj čvrst temelj u izvršnom menadžmentu izbrusio je moje vještine vođenja i strateškog planiranja, omogućujući mi da postignem uspješne rezultate u poslovnom svijetu.",
+        "paragraph3": "Bio sam u vašim cipelama i razumijem potrebe tržišta, osiguravajući da mogu razumjeti i ispuniti vaše zahtjeve učinkovito.",
+        "paragraph4": "U području web razvoja, moja strast dovela me do savladavanja raznih programskih jezika i okvira, uključujući HTML5, CSS3, JavaScript, React.js, Next.js i TailwindCSS za stilizaciju.",
+        "paragraph5": "Moje znanje u ovim tehnologijama omogućuje mi stvaranje dinamičnih i interaktivnih web stranica, osiguravajući besprijekorno korisničko iskustvo koje ne samo da ispunjava, nego i nadmašuje očekivanja.",
+        "paragraph6": "Stalno tražim prilike za proširenje svog znanja i istraživanje inovativnih rješenja kako bih pružio izvanredne rezultate.",
+        "paragraph7": "Bilo da tražite vještog freelancera za rješavanje specifičnih projekata ili posvećenog partnera za unapređenje vašeg poslovanja, spreman sam za suradnju i realizaciju vaše vizije.",
+        "paragraph8": "Radimo zajedno kako bismo stvorili utjecajna i učinkovita rješenja koja zadovoljavaju sve veće zahtjeve tržišta."
+    }    
 }
