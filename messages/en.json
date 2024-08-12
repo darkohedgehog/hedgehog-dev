@@ -118,5 +118,11 @@
       "ContactGlobe": {
         "title": "Let's Stay in Touch",
         "description": "Let's meet and exchange ideas!"
-    }    
+    },
+    "ContactMe": {
+      "title1": "Let's Talk!",
+      "title2": "How Can You Contact Me?",
+      "title3":"Mobile:",
+      "paragraph1": "Interested in how we can collaborate on something great? Whether you have an idea that needs technical magic or require assistance in developing a web application, I'm here to help!"
+  }     
   }

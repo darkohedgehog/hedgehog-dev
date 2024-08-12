@@ -118,5 +118,11 @@
     "ContactGlobe": {
       "title": "Budimo u kontaktu",
       "description": "Upoznajmo se i razmjenimo ideje!"
-    }  
+    },
+    "ContactMe": {
+      "title1": "Hajde da pričamo!",
+      "title2": "Kako me možeš kontaktirati?",
+      "title3":"Mobilni:",
+      "paragraph1": "Zanima te kako možemo zajedno raditi na nečemu sjajnom? Bilo da imaš ideju koja traži tehničku magiju ili ti treba pomoć u razvoju web aplikacije, tu sam da pomognem!"
+    }    
 }
