@@ -2,12 +2,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { useTranslations } from 'next-intl';
 
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
 });
 
 export default function ContactGlobe() {
+  const t = useTranslations('ContactGlobe');
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -411,11 +413,11 @@ export default function ContactGlobe() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-            Naslov
+          <h2 className="text-center text-4xl md:text-3xl font-bold text-accent dark:text-accentDark uppercase">
+          {t('title')}
           </h2>
-          <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <p className="text-center text-3xl md:text-2xl font-semibold text-accentDark dark:text-accent max-w-md mt-2 mx-auto">
+          {t('description')}
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none z-40" />
