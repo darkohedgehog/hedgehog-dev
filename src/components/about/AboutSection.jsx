@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 export default function AboutSection() {
     const t = useTranslations('AboutSection');
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden mb-20">
       <ContainerScroll
         titleComponent={
           <>
@@ -21,7 +21,7 @@ export default function AboutSection() {
         }
       >
        <Logo />
-       <div className="flex flex-col justify-center py-4 gap-3 mx-auto text-gray text-lg font-semibold">
+       <div className="flex flex-col justify-center py-4 mb-32 gap-3 mx-auto text-gray text-lg font-semibold">
         <p>
         {t('paragraph1')}
         </p>
@@ -43,7 +43,7 @@ export default function AboutSection() {
         <p>
          {t('paragraph7')}
         </p>
-        <p className="text-accent dark:text-accentDark">
+        <p className="text-accent dark:text-accentDark mb-4">
         {t('paragraph8')}
         </p>
        </div>

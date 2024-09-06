@@ -26,11 +26,11 @@ const ContactMe = () => {
       <p className="mt-2 text-accentDark dark:text-accent font-semibold text-2xl text-center">
       {t('title2')}
       </p>
-      <Link href={"mailto:zivic.darko79@gmail.com"} className="text-accentDark hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4">
+      <Link href={"mailto:zivic.darko79@gmail.com"} className="text-white hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4">
         <AiOutlineMail className="w-6 h-6"  />
         Email: zivic.darko79@gmail.com
         </Link>
-        <Link href={"tel:+385955074922"} className="text-accentDark hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4">
+        <Link href={"tel:+385955074922"} className="text-white hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4">
         <AiOutlinePhone className="w-6 h-6"  />
         {t('title3')} +385 95 507 4922
         </Link>

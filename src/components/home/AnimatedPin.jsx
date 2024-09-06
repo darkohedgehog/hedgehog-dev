@@ -17,7 +17,7 @@ export function AnimatedPin() {
       description: (<span>{t('description1')}</span>),
       image: Img1,
       github: "https://github.com/darkohedgehog/zivic-elektro-strapi",
-      live: "https://zivic-elektro.eu",
+      live: "https://zivic-elektro.shop",
       technologies: ["Next.js", "Strapi", "Gsap","TailwindCss"],
     },
     {
