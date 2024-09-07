@@ -124,5 +124,13 @@
       "title2": "How Can You Contact Me?",
       "title3":"Mobile:",
       "paragraph1": "Interested in how we can collaborate on something great? Whether you have an idea that needs technical magic or require assistance in developing a web application, I'm here to help!"
-  }     
+  },
+  "Blog": {
+    "title": "This is a blog",
+    "no_blogs": "Currently, there are no blogs.",
+    "loading": "Loading blogs, please wait..."
+  },
+  "BlogDetail": {
+    "loading": "Loading..."
+  }       
   }
