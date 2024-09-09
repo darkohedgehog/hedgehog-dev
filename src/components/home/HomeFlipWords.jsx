@@ -8,8 +8,8 @@ export function HomeFlipWords() {
   const words = [`${t('title1')}`, `${t('title2')}`, `${t('title3')}`, `${t('title4')}`];
 
   return (
-    <div className="h-[40rem] flex justify-center items-center px-4">
-      <div className="text-2xl lg:text-4xl md:text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-300">
+    <div className="h-[8rem] flex justify-center items-center px-4">
+      <div className="text-xl lg:text-4xl md:text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-300">
       {t('description1')}
         <FlipWords words={words} /> <br />
         {t('description2')}
