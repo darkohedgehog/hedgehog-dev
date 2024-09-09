@@ -8,9 +8,9 @@ const ContactMe = () => {
   const t = useTranslations('ContactMe');
 
   return (
-    <section className="relative flex flex-col lg:flex-row lg:h-screen lg:items-center lg:py-10 lg:mx-24 mb-6 lg:mt-0">
+    <section className="relative flex flex-col gap-4 lg:flex-row lg:min-h-screen lg:items-center lg:py-10 px-4 sm:px-6 lg:px-8 mb-6 lg:-mt-20">
       {/* Prvi div */}
-      <div className="flex-1 flex flex-col items-center justify-center w-full px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24 border border-gray min-h-full">
+      <div className="flex-1 flex flex-col items-center justify-center w-full max-w-[90vw] lg:max-w-[45vw] min-h-[300px] lg:min-h-[400px] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12 border-4 border-[#6C6C6C] bg-card-bg-light dark:bg-card-bg-dark rounded-[30px] shadow-2xl">
         <div className="mx-auto max-w-lg text-center">
           <h1 className="text-2xl font-bold sm:text-3xl text-accent dark:text-accentDark uppercase">
             {t('title1')}
@@ -26,14 +26,14 @@ const ContactMe = () => {
         <div className="mx-auto mb-0 mt-8 max-w-md space-y-4">
           <Link
             href={"mailto:zivic.darko79@gmail.com"}
-            className="text-white hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4"
+            className="text-accentDark hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4"
           >
             <AiOutlineMail className="w-6 h-6" />
             Email: zivic.darko79@gmail.com
           </Link>
           <Link
             href={"tel:+385955074922"}
-            className="text-white hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4"
+            className="text-accentDark hover:text-accent transition-all duration-300 flex gap-2 items-center justify-start mt-4"
           >
             <AiOutlinePhone className="w-6 h-6" />
             {t('title3')} +385 95 507 4922
@@ -42,8 +42,8 @@ const ContactMe = () => {
       </div>
 
       {/* Drugi div */}
-      <div className="flex-1 relative h-64 lg:h-auto w-full border border-gray min-h-full">
-        <ContactGlobe />
+      <div className="flex-1 relative min-h-[300px] lg:min-h-[400px] w-full max-w-[90vw] lg:max-w-[45vw] border-4 border-[#6C6C6C] bg-card-bg-light dark:bg-card-bg-dark rounded-[30px] shadow-2xl overflow-hidden flex items-center justify-center">
+        <ContactGlobe className="object-contain" />
       </div>
     </section>
   );

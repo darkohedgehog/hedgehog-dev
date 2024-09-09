@@ -397,29 +397,19 @@ export default function ContactGlobe() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center pb-10 h-screen md:h-auto relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+    <div className="flex items-center justify-center w-full h-full">
+      <div className="relative w-full h-[200px] sm:h-[300px] lg:h-[430px] max-w-full">
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
         >
-          
         </motion.div>
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none z-40" />
-        <div className="absolute w-full h-96 md:h-full z-10 pb-8">
+        <div className="absolute w-full h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>
   );
 }
+
