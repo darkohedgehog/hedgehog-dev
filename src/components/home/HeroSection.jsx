@@ -19,7 +19,7 @@ const HeroSection = () => {
 
   return (
     <section className='lg:px-28'>
-      <div className="mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-2xl px-4 py-10 lg:px-8">
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10">
             <div className="relative h-64 sm:h-80 lg:h-full">
@@ -39,7 +39,7 @@ const HeroSection = () => {
               <div className='flex justify-start items-start'>
               <HomeFlipWords />
               </div>
-              <p className="text-accent dark:text-neutral-500 font-bold text-xl -mt-52">
+              <p className="text-accent dark:text-neutral-300 font-bold text-xl -mt-52">
               {t('title')}
               </p>
             <div className='flex items-center justify-start mt-4'>
