@@ -413,12 +413,7 @@ export default function ContactGlobe() {
           }}
           className="div"
         >
-          <h2 className="text-center text-4xl md:text-3xl font-bold text-accent dark:text-accentDark uppercase">
-          {t('title')}
-          </h2>
-          <p className="text-center text-3xl md:text-2xl font-semibold text-accentDark dark:text-accent max-w-md mt-2 mx-auto">
-          {t('description')}
-          </p>
+          
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none z-40" />
         <div className="absolute w-full h-96 md:h-full z-10 pb-8">
