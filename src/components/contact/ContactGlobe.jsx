@@ -2,14 +2,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import { useTranslations } from 'next-intl';
+
 
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
 });
 
 export default function ContactGlobe() {
-  const t = useTranslations('ContactGlobe');
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
