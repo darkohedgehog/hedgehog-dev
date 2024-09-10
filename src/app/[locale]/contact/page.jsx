@@ -1,7 +1,9 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
-
+const ContactFormWrapper = dynamic(() => import('@/components/contact/ContactFormWrapper'), {
+  suspense: true,
+  });
 const ContactIntro = dynamic(() => import('@/components/contact/ContactIntro'), {
   suspense: true,
 });
@@ -14,6 +16,7 @@ const Contact = () => {
     <Suspense fallback={<div>Učitavam...</div>}>
       <ContactIntro />
       <ContactMe />
+      <ContactFormWrapper />
     </Suspense>
   )
 }
