@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import { useTranslations } from 'next-intl';
-import ContactGlobe from './ContactGlobe';
+import LottieAnimation from '../ui/LottieAnimation';
 
 const ContactMe = () => {
   const t = useTranslations('ContactMe');
@@ -42,8 +42,11 @@ const ContactMe = () => {
       </div>
 
       {/* Drugi div */}
-      <div className="flex-1 relative min-h-[300px] lg:min-h-[400px] w-full max-w-[90vw] lg:max-w-[45vw] border-4 border-[#6C6C6C] bg-card-bg-light dark:bg-card-bg-dark rounded-[30px] shadow-2xl overflow-hidden flex items-center justify-center">
-        <ContactGlobe className="object-contain" />
+      <div className="flex-1 relative min-h-[300px] lg:min-h-[400px] w-full max-w-[90vw] lg:max-w-[45vw] border-4 border-[#6C6C6C] bg-card-bg-light dark:bg-card-bg-dark rounded-[30px] shadow-2xl overflow-hidden flex items-center justify-center flex-col">
+        <h1 className='flex items-center justify-center text-2xl lg:text-3xl font-semibold text-accent dark:text-accentDark uppercase mt-12 mb-4'>
+        {t('title4')}
+          </h1>
+        <LottieAnimation className="object-contain" />
       </div>
     </section>
   );

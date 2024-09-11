@@ -65,7 +65,7 @@ const ContactForm = () => {
   return (
     <div className="w-2/3">
         <h1 className="flex items-center justify-center my-3 text-xl font-semibold uppercase text-accent dark:text-accentDark">
-            Pošaljite upit
+            Kontakt forma
         </h1>
         <form
           ref={formRef}
