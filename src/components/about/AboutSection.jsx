@@ -21,7 +21,7 @@ export default function AboutSection() {
         }
       >
        <Logo />
-       <div className="flex flex-col justify-center py-4 mb-32 gap-3 mx-auto text-gray text-lg font-semibold">
+       <div className="flex flex-col justify-center py-4 mb-8 gap-3 mx-auto text-gray text-lg font-semibold">
         <p>
         {t('paragraph1')}
         </p>
