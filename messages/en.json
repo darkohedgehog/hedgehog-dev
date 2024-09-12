@@ -126,6 +126,24 @@
       "title4":"Let's keep in touch",
       "paragraph1": "Interested in how we can collaborate on something great? Whether you have an idea that needs technical magic or require assistance in developing a web application, I'm here to help!"
   },
+  "ContactForm": {
+    "message": "Thank you. You will receive a response as soon as possible.",
+    "error": "Ahh, an error occurred. Please try again.",
+    "title1": "Contact Form",
+    "name": "Your name",
+    "email": "Your email",
+    "message1": "Your message",
+    "placeholder1": "What is your name?",
+    "placeholder2": "What is your email?",
+    "placeholder3": "What is your message?",
+    "sending": "Sending...",
+    "send": "Send"
+  },
+  "ContactFormWrapper": {
+    "title": "Send me a message",
+    "paragraph1": "I will respond as soon as possible",
+    "paragraph2": "Let's work together to present you in the best way"
+  },  
   "Blog": {
     "title": "This is a blog",
     "no_blogs": "Currently, there are no blogs.",

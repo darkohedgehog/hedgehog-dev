@@ -126,6 +126,24 @@
       "title4":"Budimo u kontaktu",
       "paragraph1": "Zanima Vas kako možemo zajedno raditi na nečemu sjajnom? Bilo da imate ideju koja traži tehničku magiju ili Vam treba pomoć u razvoju web aplikacije, tu sam da pomognem!"
     },
+    "ContactForm": {
+      "message": "Hvala Vam. Dobit ćete odgovor u što kraćem roku.",
+      "error": "Ahh, dogodila se greška. Pokušajte ponovo.",
+      "title1":"Kontakt forma",
+      "name":"Vaše ime",
+      "email": "Vaš email",
+      "message1": "Vaša poruka",
+      "placeholder1":"Kako se zovete?",
+      "placeholder2":"Koji je Vaš email?",
+      "placeholder3": "Koja je Vaša poruka?",
+      "sending":"Šaljem...",
+      "send":"Pošalji"
+    },
+    "ContactFormWrapper": {
+      "title": "Pošaljite mi poruku",
+      "paragraph1": "Odgovoriću Vam u što kraćem roku",
+      "paragraph2": "Hajde zajedno da Vas predstavimo u najboljem svjetlu"
+    },
     "Blog": {
       "title": "Ovo je blog",
       "no_blogs": "Trenutno nema blogova.",

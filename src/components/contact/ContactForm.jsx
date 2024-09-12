@@ -2,8 +2,11 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLocationArrow } from "react-icons/fa6";
+import { useTranslations } from 'next-intl';
 
 const ContactForm = () => {
+
+  const t = useTranslations('ContactForm');
    
     const formRef = useRef();
     const [form, setForm] = useState({
@@ -45,7 +48,7 @@ const ContactForm = () => {
         .then(
           () => {
             setLoading(false);
-            alert("Hvala Vam. Dobit ćete odgovor u što kraćem roku.");
+            alert(t('message'));
   
             setForm({
               name: "",
@@ -57,7 +60,7 @@ const ContactForm = () => {
             setLoading(false);
             console.error(error);
   
-            alert("Ahh, dogodila se greška. Pokušajte ponovo.");
+            alert(t('error'));
           }
         );
     };
@@ -65,7 +68,7 @@ const ContactForm = () => {
   return (
     <div className="w-2/3">
         <h1 className="flex items-center justify-center my-3 text-xl font-semibold uppercase text-accent dark:text-accentDark">
-            Kontakt forma
+            {t('title1')}
         </h1>
         <form
           ref={formRef}
@@ -73,35 +76,35 @@ const ContactForm = () => {
           className='my-8 flex flex-col gap-6 border-2 border-[#6C6C6C] shadow-lg shadow-accent dark:shadow-accentDark rounded-[30px]'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium my-4 mx-5'>Vaše ime</span>
+            <span className='text-white font-medium my-4 mx-5'>{t('name')}</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="Kako se zovete?"
+              placeholder={t('placeholder1')}
               className='py-4 px-6 mx-2 placeholder:text-secondary text-white border-1 border-[#6C6C6C] shadow-lg shadow-accent dark:shadow-accentDark rounded-[30px] font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4 mx-5'>Vaš email</span>
+            <span className='text-white font-medium mb-4 mx-5'>{t('email')}</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="Koji je Vaš email?"
+              placeholder={t('placeholder2')}
               className='py-4 px-6 mx-2 placeholder:text-secondary text-white border-1 border-[#6C6C6C] shadow-lg shadow-accent dark:shadow-accentDark rounded-[30px] font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4 mx-5'>Vaša poruka</span>
+            <span className='text-white font-medium mb-4 mx-5'>{t('message1')}</span>
             <textarea
               rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='Koja je Vaša poruka?'
+              placeholder={t('placeholder3')}
               className='py-4 px-6 mx-2 placeholder:text-secondary text-white border-1 border-[#6C6C6C] shadow-lg shadow-accent dark:shadow-accentDark rounded-[30px] font-medium'
             />
           </label>
@@ -111,7 +114,7 @@ const ContactForm = () => {
           className="relative mb-6 inline-flex h-12 w-[200px] mx-5 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-accent dark:text-accentDark backdrop-blur-3xl gap-3">
-             {loading ? "Šaljem..." : "Pošalji"}
+             {loading ? t('sending') : t('send')}
               <FaLocationArrow />
             </span>
             </button>
