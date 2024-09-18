@@ -145,9 +145,10 @@
       "paragraph2": "Hajde zajedno da Vas predstavimo u najboljem svjetlu"
     },
     "Blog": {
-      "title": "Ovo je blog",
       "no_blogs": "Trenutno nema blogova.",
-      "loading": "Učitavanje blogova, molimo sačekajte..."
+      "loading": "Učitavanje blogova, molimo sačekajte...",
+      "title": "Izazovi i Rješenja u Razvoju Web Aplikacija",
+      "paragraph": "Tijekom svoje karijere web developera, susretao sam se s različitim izazovima pri izradi aplikacija, bilo da se radi o problemima s dinamičkim rutiranjem, stilizacijom komponenti, ili optimizacijom performansi. Kroz rad na različitim projektima, imao sam priliku koristiti moderne tehnologije poput Next.js, React, TailwindCSS,Strapi ..., što mi je omogućilo ne samo da riješim probleme na efikasan način, već i da unaprijedim svoja znanja. U ovom blogu želim podijeliti iskustva o preprekama s kojima sam se suočio, kao i strategije koje su mi pomogle da ih prevaziđem"
     },
     "BlogDetail": {
       "loading": "Učitavam..."

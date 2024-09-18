@@ -145,10 +145,12 @@
     "paragraph2": "Let's work together to present you in the best way"
   },  
   "Blog": {
-    "title": "This is a blog",
-    "no_blogs": "Currently, there are no blogs.",
-    "loading": "Loading blogs, please wait..."
+    "no_blogs": "There are currently no blogs.",
+    "loading": "Loading blogs, please wait...",
+    "title": "Challenges and Solutions in Web Application Development",
+    "paragraph": "Throughout my career as a web developer, I have encountered various challenges in application development, whether it's issues with dynamic routing, component styling, or performance optimization. Working on different projects has given me the opportunity to use modern technologies like Next.js, React, TailwindCSS, Strapi, which not only helped me solve problems efficiently but also enhanced my skills. In this blog, I aim to share my experiences with the obstacles I've faced and the strategies that helped me overcome them."
   },
+  
   "BlogDetail": {
     "loading": "Loading..."
   }       

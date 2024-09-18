@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 async function fetchBlogs(locale) {
   try {
@@ -20,6 +20,7 @@ async function fetchBlogs(locale) {
 }
 
 const Blog = () => {
+  const t = useTranslations('Blog');
   const locale = useLocale(); // Uzimamo trenutni jezik
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -39,18 +40,21 @@ const Blog = () => {
   }, [locale]); // Ponovo fetchuje blogove kada se locale promeni
 
   if (loading) {
-    return <p>Loading blogs...</p>;
+    return <p>{t('loading')}</p>;
   }
 
   if (blogs.length === 0) {
-    return <p>No blogs available for this locale.</p>;
+    return <p>{t('no_blogs')}</p>;
   }
 
   return (
-    <div className='px-10 md:px-20 py-28'>
-      <h1 className='text-[24px] uppercase font-bold mb-8 flex items-center justify-center text-accent dark:text-accentDark text-center'>
-        Blogovi na jeziku: {locale}
+    <div className='px-10 md:px-20 mb-10'>
+      <h1 className='text-2xl lg:text-3xl uppercase font-bold mb-8 flex items-center justify-center text-accent text-center'>
+      {t('title')}
       </h1>
+      <p className='text-xl font-semibold mb-8 flex items-center justify-center text-accent dark:text-white text-clip mx-auto'>
+        {t('paragraph')}
+      </p>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {blogs.map((blog) => {
           const thumbnailUrl = blog?.attributes?.thumbnail?.data?.[0]?.attributes?.url;
@@ -73,6 +77,9 @@ const Blog = () => {
                 <h2 className='text-[18px] font-semibold my-8 text-darkpurple dark:text-accentDark flex items-center justify-center mx-auto text-center'>
                   {blog.attributes.title}
                 </h2>
+                <p className='text-sm font-semibold my-4 text-gray dark:text-white flex justify-start mx-auto'>
+                {blog.attributes.shortdesc}
+                </p>
               </Link>
             </div>
           );
