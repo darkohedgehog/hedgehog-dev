@@ -197,5 +197,40 @@
     "paragraph5": " www.hedgehogwebdev.com može prikupljti određene podatke o Korisnicima tijekom pristupanja / korištenja www.hedgehogwebdev.com (IP adresa, session-cookie, ključne riječi korištene kod pretraživanja i sl.), koje koristi za analizu ponašanja Korisnika i rada sustava, kako bi poboljšao rad i funkcionalnost www.hedgehogwebdev.com i njegove sadržaje dodatno usmjerio i prilagodio Korisnicima.",
     "paragraph6": "Pružatelj usluge se obvezuje da će u dobroj namjeri koristiti podatke pribavljene od Korisnika, te da pribavljene podatke neće distribuirati trećim osobama.",
     "paragraph7": " Kupac i korisnik prihvaćanjem ovih uvjeta korištenja i kupnje jamči da je upoznat sa zaštititom i prikupljanjem “kolačića”, svojih osobnih podataka te njihovom korištenju, daje svoju privolu i suglasnost za navedeno korištenje."
+},
+"TermsOfUse": {
+  "title1": "Uvjeti korištenja",
+  "title2": "1. Pružatelj usluge",
+  "title3": "2. Opće odredbe",
+  "title4": "3. Opseg korištenja i prava intelektualnog vlasništva",
+  "title5": "4. Postupak s korisničkim imenom i (lozinkom) zaporkom",
+  "title6": "5. Povezanost na druge internet stranice",
+  "paragraph1": "Živić-elektro j.d.o.o., 204.Vukovarske brigade 39, 32000 Vukovar, OIB: 90344764519(dalje: Pružatelj usluge) svojim korisnicima omogućuje korištenje sadržaja Internet stranice na internetskoj domeni www.hedgehogwebdev.com, koje je regulirano ovim Uvjetima korištenja (dalje Uvjeti korištenja).",
+  "paragraph2": "Korisnikom se smatra svaka osoba koja pristupa i/ili koristi stranice www.hedgehogwebdev.com, bez obzira koristi li besplatne stranice ili stranice za koje je potrebna prijava s korisničkim imenom i lozinkom/zaporkom (dalje: Korisnik)",
+  "paragraph3": "Pristupanjem i/ili korištenjem bilo kojeg dijela sadržaja ili servisa koji pripadaju www.hedgehogwebdev.com smatra se da je Korisnik upoznat s ovim Uvjetima korištenja te da ih u potpunosti razumije i prihvaća. Pružatelj usluge zadržava pravo promjene izgleda, sadržaja i opsega www.hedgehogwebdev.com, svih usluga, stranica i podstranica koje su sastavni dio www.hedgehogwebdev.com kao i ovih Uvjeta korištenja.",
+  "paragraph4": "Pri korištenju www.hedgehogwebdev.com Korisnik je u cijelosti dužan poštovati relevantne odredbe ugovora o zasnivanju pretplatničkog odnosa te ovih Uvjeta korištenja. Niti jedan dio sadržaja www.hedgehogwebdev.com ne smije se koristiti u nezakonite svrhe ili protivno odredbama ovih Uvjeta korištenja.",
+  "paragraph5": "Tekstovi objavljeni u bazama znanja predstavljaju autorstvo.",
+  "paragraph6": "Pružatelj usluge ne preuzima odgovornost za bilo kakvu štetu nastalu korisnicima korištenjem www.hedgehogwebdev.com i njegovog sadržaja, osobito zbog mogućih pogrešaka u prijepisu mišljenja.",
+  "paragraph7": "Korisnici su upoznati sa sljedećim činjenicama: zbirke dokumenata i pojedinačni dokumenti koji su sastavni dio sadržaja www.hedgehogwebdev.com mogu biti u cijelosti ili pojedinačno zaštićeni autorskim pravom i drugim propisima, pojedinačne jedinice, koje su dio sadržaja www.hedgehogwebdev.com, mogu imati značaj autorskog djela, te su zaštićene autorskim pravom njihovog autora. Autorska zaštita sadržaja www.hedgehogwebdev.com, njegovih pojedinačnih zbirki podataka (baza znanja) i pojedinačnih jedinica u zbirkama, koje su dostupne korisnicima, obuhvaća zaštitu u skladu sa Zakonom o autorskom pravu i drugim srodnim pravima.",
+  "paragraph8": "Korisniku je dopušteno korištenje pojedinačnih jedinica objavljenih na www.hedgehogwebdev.com isključivo za vlastite potrebe. Svi oblici daljnje distribucije bilo kojeg dijela www.hedgehogwebdev.com te umnožavanje, kopiranje odnosno omogućavanje korištenja trećim osobama (npr. reproduciranje u publikacijama, objava na internet stranicama trećih osoba i sl.), izričito su zabranjeni.",
+  "paragraph9": "Pružatelj usluge polaže autorska prava na vlastite sadržaje (moguće tekstualne sadržaje, grafičke, baze podataka, programski kod i dr.).",
+  "paragraph10": "Neovlašteno korištenje bilo kojeg dijela ovih sadržaja smatra se kršenjem autorskih i drugih prava Pružatelja usluge i www.hedgehogwebdev.com.",
+  "paragraph11": "Korisnik odgovara Pružatelju usluge za štetu koja Pružatelju usluge nastane kršenjem odredbi ove glave Uvjeta korištenja, tj. u njemu sadržanih obveza odnosno ograničenja.",
+  "paragraph12":"Korisnik se obvezuje da će dodijeljenu zaporku čuvati kao poslovnu tajnu te da će zaporku koristiti samo osobno, tj. da iste neće učiniti dostupnima trećim osobama. Korisnik je odgovoran Pružatelju usluge za štetu nastalu pri zloporabi zaporke od strane neovlaštenog korisnika odnosno treće osobe kojoj je omogućio korištenje istima.",
+  "paragraph13": " Korisnik je obvezan u slučaju saznanja za činjenice koje ukazuju na mogućnost zloporabe zaporke, bez odgode obavijestiti Pružatelja usluge.",
+  "paragraph14": "U slučaju kršenja odredaba Uvjeta korištenja Pružatelj usluge ima pravo ograničiti ili onemogućiti uporabu sadržaja www.hedgehogwebdev.com.",
+  "paragraph15": "www.hedgehogwebdev.com može sadržavati i poveznice na druge internet stranice, koje nisu održavane od strane društva. Pružatelj usluge za sadržaj tih stranica ne odgovara."
+},
+"Complaint": {
+  "title": "Reklamacije i prigovori",
+  "paragraph1": "Reklamacija na izvršenu uslugu vrši najduže u roku 8 dana od primitka usluge.",
+  "paragraph2": "Molimo da tokom pisanja prigovora ispunite sljedeće:",
+  "paragraph3": "Vaše prigovore i reklamacije možete poslati na:",
+  "paragraph4": "Više informacija možete dobiti pozivom na broj telefona:",
+  "li1":"Upišite Vaše ime i prezime",
+  "li2":"Upišite Vašu e-mail adresu",
+  "li3":"Upišite broj i datum narudžbe",
+  "li4":"Naziv usluge",
+  "li5":"Razlog prigovora ili reklamacije"
 }
 }

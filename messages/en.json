@@ -198,5 +198,40 @@
     "paragraph5": "www.hedgehogwebdev.com may collect certain data about users during their access/use of www.hedgehogwebdev.com (IP address, session cookie, keywords used in searches, etc.), which is used to analyze user behavior and system performance in order to improve the operation and functionality of www.hedgehogwebdev.com and further direct and tailor its content to users.",
     "paragraph6": "The service provider commits to using data obtained from users in good faith and will not distribute the obtained data to third parties.",
     "paragraph7": "By accepting these terms of use and purchase, the buyer and user guarantee that they are familiar with the protection and collection of cookies, their personal data, and their use, and give their consent for the aforementioned usage."
-  }           
+  },
+  "TermsOfUse": {
+    "title1": "Terms of Use",
+    "title2": "1. Service Provider",
+    "title3": "2. General Provisions",
+    "title4": "3. Scope of Use and Intellectual Property Rights",
+    "title5": "4. Handling of Username and (Password)",
+    "title6": "5. Links to Other Websites",
+    "paragraph1": "Živić-elektro j.d.o.o., 204.Vukovarske brigade 39, 32000 Vukovar, OIB: 90344764519 (hereinafter: Service Provider) enables its users to use the content of the website on the internet domain www.hedgehogwebdev.com, which is governed by these Terms of Use (hereinafter: Terms of Use).",
+    "paragraph2": "A user is any person who accesses and/or uses the www.hedgehogwebdev.com pages, regardless of whether they use the free pages or the pages that require login with a username and password (hereinafter: User).",
+    "paragraph3": "By accessing and/or using any part of the content or services that belong to www.hedgehogwebdev.com, it is considered that the User is familiar with these Terms of Use and fully understands and accepts them. The Service Provider reserves the right to change the appearance, content, and scope of www.hedgehogwebdev.com, all services, pages, and subpages that are part of www.hedgehogwebdev.com, as well as these Terms of Use.",
+    "paragraph4": "When using www.hedgehogwebdev.com, the User is fully obligated to comply with the relevant provisions of the subscription agreement and these Terms of Use. No part of the content on www.hedgehogwebdev.com may be used for unlawful purposes or in violation of these Terms of Use.",
+    "paragraph5": "Texts published in the knowledge base represent authorship.",
+    "paragraph6": "The Service Provider is not responsible for any damage incurred by users due to the use of www.hedgehogwebdev.com and its content, especially due to possible errors in transcribing opinions.",
+    "paragraph7": "Users are aware of the following facts: collections of documents and individual documents that are part of the content of www.hedgehogwebdev.com may be entirely or individually protected by copyright and other regulations. Individual units, which are part of the content of www.hedgehogwebdev.com, may have the status of a copyrighted work and are protected by the copyright of their author. The copyright protection of the content on www.hedgehogwebdev.com, its individual collections of data (knowledge base), and individual units in the collections available to users, includes protection in accordance with the Copyright Act and other related rights.",
+    "paragraph8": "The User is permitted to use individual units published on www.hedgehogwebdev.com exclusively for personal needs. All forms of further distribution of any part of www.hedgehogwebdev.com and reproduction, copying, or enabling use by third parties (e.g., reproduction in publications, posting on third-party websites, etc.) are expressly prohibited.",
+    "paragraph9": "The Service Provider holds copyright on its own content (possible text content, graphics, databases, program code, etc.).",
+    "paragraph10": "Unauthorized use of any part of this content is considered a violation of the Service Provider's and www.hedgehogwebdev.com's copyright and other rights.",
+    "paragraph11": "The User is liable to the Service Provider for any damage caused to the Service Provider by violating the provisions of this section of the Terms of Use, i.e., the obligations or restrictions contained therein.",
+    "paragraph12": "The User agrees to keep the assigned password confidential and to use the password personally, i.e., not to make it available to third parties. The User is responsible to the Service Provider for any damage caused by the misuse of the password by an unauthorized user or a third party to whom they have allowed access.",
+    "paragraph13": "The User is obligated, in the event of knowledge of facts indicating possible misuse of the password, to immediately notify the Service Provider.",
+    "paragraph14": "In the event of a violation of the Terms of Use, the Service Provider has the right to restrict or disable the use of www.hedgehogwebdev.com's content.",
+    "paragraph15": "www.hedgehogwebdev.com may contain links to other websites, which are not maintained by the company. The Service Provider is not responsible for the content of those websites."
+  },
+  "Complaint": {
+    "title": "Complaints and Grievances",
+    "paragraph1": "A complaint about the provided service can be made no later than 8 days after receiving the service.",
+    "paragraph2": "Please include the following when writing your complaint:",
+    "paragraph3": "You can send your complaints and grievances to:",
+    "paragraph4": "For more information, you can call the phone number:",
+    "li1": "Enter your first and last name",
+    "li2": "Enter your email address",
+    "li3": "Enter the order number and date",
+    "li4": "Service name",
+    "li5": "Reason for the complaint or grievance"
+  }             
 }

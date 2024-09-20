@@ -1,9 +1,12 @@
-import React from 'react'
+import Complaint from '@/components/complaint/Complaint';
+import React from 'react';
 
 const ComplaintPage = () => {
   return (
-    <div>ComplaintPage</div>
+    <>
+      <Complaint  />
+    </>
   )
 }
 
-export default ComplaintPage
+export default ComplaintPage;

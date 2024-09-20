@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 const Privacy = () => {
     const t = useTranslations('Privacy');
   return (
-    <div className='container  p-4 my-16 text-gray'>
+    <div className='container  p-4 my-16 text-accentDark dark:text-gray bg-card-bg-light dark:bg-card-bg-dark rounded-md shadow-md shadow-accent dark:shadow-accentDark'>
     <h2 className='flex items-center justify-center text-accent font-bold uppercase text-2xl my-8'>
        {t('title1')}
     </h2>
