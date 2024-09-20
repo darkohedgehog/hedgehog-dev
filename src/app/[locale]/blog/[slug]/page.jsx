@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 // Funkcija za dohvatanje bloga po slug-u i jeziku
 async function fetchBlogBySlug(slug, locale) {
@@ -29,6 +29,7 @@ async function fetchBlogBySlug(slug, locale) {
 }
 
 const BlogDetail = () => {
+  const t = useTranslations('BlogDetail');
   const [blog, setBlog] = useState(null);
   const { slug } = useParams(); // Uzmi slug iz URL-a
   const locale = useLocale(); // Koristimo useLocale iz next-intl da bismo uzeli jezik
@@ -49,7 +50,9 @@ const BlogDetail = () => {
   }, [slug, locale]);
 
   if (!blog) {
-    return <div>Loading...</div>;
+    return <div className='flex items-center justify-center text-accent'>
+      {t('loading')}
+      </div>;
   }
 
   const thumbnailUrl = blog?.thumbnail?.[0]?.formats?.thumbnail?.url;
@@ -109,7 +112,7 @@ const BlogDetail = () => {
           })
         ) : (
           <p className='flex items-center justify-center text-red-400'>
-                  No content available
+                  {t('available')}
            </p>
         )}
       </div>

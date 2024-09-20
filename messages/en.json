@@ -148,10 +148,19 @@
     "no_blogs": "There are currently no blogs.",
     "loading": "Loading blogs, please wait...",
     "title": "Challenges and Solutions in Web Application Development",
-    "paragraph": "Throughout my career as a web developer, I have encountered various challenges in application development, whether it's issues with dynamic routing, component styling, or performance optimization. Working on different projects has given me the opportunity to use modern technologies like Next.js, React, TailwindCSS, Strapi, which not only helped me solve problems efficiently but also enhanced my skills. In this blog, I aim to share my experiences with the obstacles I've faced and the strategies that helped me overcome them."
+    "paragraph": "Throughout my career as a web developer, I have encountered various challenges in application development, whether it's issues with dynamic routing, component styling, or performance optimization. Working on different projects has given me the opportunity to use modern technologies like Next.js, React, TailwindCSS, Strapi, which not only helped me solve problems efficiently but also enhanced my skills. In this blog, I aim to share my experiences with the obstacles I've faced and the strategies that helped me overcome them.",
+    "available": "No blogs available"
   },
   
   "BlogDetail": {
-    "loading": "Loading..."
-  }       
-  }
+    "loading": "Loading...",
+    "available":"No content available"
+  },
+  "CookieConsent": {
+    "text1": "This website uses cookies to improve your user experience. Read more in our",
+    "text2": "terms of use",
+    "text3": "privacy policy.",
+    "text4": "I agree",
+    "text5": "I disagree"
+  }         
+}

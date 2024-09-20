@@ -89,7 +89,7 @@ const Blog = () => {
                 </Link>
               ) : (
                 <p className='flex items-center justify-center text-red-400'>
-                  No blogs available
+                   {t('available')}
                 </p>
               )}
             </div>

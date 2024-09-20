@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 const CookieConsent = () => {
+  const t = useTranslations('CookieConsent');
   const [showConsent, setShowConsent] = useState(false);
 
   useEffect(() => {
@@ -37,14 +39,13 @@ const CookieConsent = () => {
           />
         </svg>
         <p className="text-sm">
-          Ova web stranica koristi kolačiće da poboljša vaše korisničko
-          iskustvo. Pročitajte više u našim{" "}
+        {t('text1')}{" "}
           <Link href={"/terms"} className="underline">
-            uvjetima korištenja
+          {t('text2')}
           </Link>{" "}
-          i{" "}
+          &{" "}
           <Link href={"/privacy"} className="underline">
-            pravilima privatnosti.
+          {t('text3')}
           </Link>
         </p>
       </div>
@@ -53,13 +54,13 @@ const CookieConsent = () => {
           onClick={() => handleConsent(true)}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full md:w-auto text-xs"
         >
-          Slažem se
+          {t('text4')}
         </button>
         <button
           onClick={() => handleConsent(false)}
           className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded w-full md:w-auto text-xs"
         >
-          Ne slažem se
+          {t('text5')}
         </button>
       </div>
     </div>
