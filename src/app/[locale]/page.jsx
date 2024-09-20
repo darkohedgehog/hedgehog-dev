@@ -24,6 +24,10 @@ const OutroSection = dynamic(() => import('@/components/home/OutroSection'), {
   ssr: false,
   suspense: true,
 });
+const CookieConsent = dynamic(() => import('@/components/cookies/CookieConsent'), {
+  ssr: false,
+  suspense: true,
+});
 
 export default function HomePage({ params: { locale } }) {
   unstable_setRequestLocale(locale);
@@ -36,6 +40,7 @@ export default function HomePage({ params: { locale } }) {
       <Projects />
       <ApproachWrapper />
       <OutroSection />
+      <CookieConsent />
     </Suspense>
   );
 }
