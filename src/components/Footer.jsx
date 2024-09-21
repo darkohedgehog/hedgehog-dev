@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { RiMessengerLine, RiLinkedinBoxFill, RiNextjsFill } from "react-icons/ri";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { SiSanity, SiGithub } from "react-icons/si";
+import { SiStrapi, SiGithub } from "react-icons/si";
 import { GiHedgehog } from "react-icons/gi";
 import Logo from './logo/Logo';
 import { usePathname } from 'next/navigation';
@@ -83,8 +83,8 @@ const Footer = () => {
          <RiNextjsFill className='w-6 h-6' />
          </Link>
          &
-         <Link href={'https://sanity.io/'} target='blank'>
-         <SiSanity className='w-5 h-5' />
+         <Link href={'https://strapi.io/'} target='blank'>
+         <SiStrapi className='w-5 h-5' />
          </Link>
         </div>
         <div className="flex items-center justify-center gap-2 my-6 text-sm text-gray-500 sm:text-center dark:text-accentDark"> 
