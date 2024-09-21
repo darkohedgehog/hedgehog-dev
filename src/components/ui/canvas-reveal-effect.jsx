@@ -7,7 +7,11 @@ import * as THREE from "three";
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
   opacities = [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1],
-  colors = [[0, 255, 255]],
+  colors = [
+    [0, 100, 0],    // Tamno zelena
+    [128, 0, 128],  // Ljubičasta
+    [0, 0, 255],    // Plava
+  ],
   containerClassName,
   dotSize,
   showGradient = true,
