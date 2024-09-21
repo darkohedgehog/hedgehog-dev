@@ -7,34 +7,29 @@ import { useLocale, useTranslations } from 'next-intl';
 
 async function fetchBlogs(locale) {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?locale=${locale}&populate=*`, {
-      headers: {
-        'Authorization': `Bearer ${process.env.NEXT_PUBLIC_REST_API_KEY}`,
-      },
-    });
+    const res = await fetch(`/api/blogs?locale=${locale}`); // Pozivamo našu lokalnu API rutu
     if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
     }
     const data = await res.json();
-    return data;
+    return data; // Vraćamo podatke koje smo dobili iz API rute
   } catch (error) {
     console.error('Fetch error:', error);
     return null;
   }
 }
 
-
 const Blog = () => {
   const t = useTranslations('Blog');
-  const locale = useLocale(); // Uzimamo trenutni jezik
+  const locale = useLocale();
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getBlogs = async () => {
-      const blogData = await fetchBlogs(locale); // Fetch blogova na osnovu locale-a
+      const blogData = await fetchBlogs(locale);
       if (blogData?.data) {
-        setBlogs(blogData.data);
+        setBlogs(blogData.data); // Postavljamo blogove iz dobijenih podataka
       } else {
         console.error('No blogs available for locale:', locale);
       }
@@ -42,7 +37,7 @@ const Blog = () => {
     };
 
     getBlogs();
-  }, [locale]); // Ponovo fetchuje blogove kada se locale promeni
+  }, [locale]);
 
   if (loading) {
     return <p>{t('loading')}</p>;
@@ -62,12 +57,19 @@ const Blog = () => {
       </p>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {blogs.map((blog) => {
-          const thumbnailUrl = blog?.thumbnail?.[0]?.formats?.thumbnail?.url
-  
+          const thumbnailUrl = blog?.thumbnail?.[0]?.formats?.thumbnail?.url;
+
           return (
-            <div key={blog.id} className='border-y-2 border-accent dark:border-accentDark rounded-lg shadow-xl shadow-slate-500 dark:shadow-gray p-5 h-[400px] w-full sm:w-[400px] overflow-auto mx-auto'>
+            <div
+              key={blog.id}
+              className='border-y-2 border-accent dark:border-accentDark rounded-lg shadow-xl shadow-slate-500 dark:shadow-gray p-5 h-[400px] w-full sm:w-[400px] overflow-auto mx-auto'
+            >
               {blog?.slug ? (
-                <Link href={`/${locale}/blog/${blog.slug}`} locale={locale} prefetch={false}>
+                <Link
+                  href={`/${locale}/blog/${blog.slug}`}
+                  locale={locale}
+                  prefetch={false}
+                >
                   {thumbnailUrl ? (
                     <Image
                       src={`${process.env.NEXT_PUBLIC_BASE_URL}${thumbnailUrl}`}
@@ -89,7 +91,7 @@ const Blog = () => {
                 </Link>
               ) : (
                 <p className='flex items-center justify-center text-red-400'>
-                   {t('available')}
+                  {t('available')}
                 </p>
               )}
             </div>

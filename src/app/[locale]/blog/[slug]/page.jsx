@@ -8,20 +8,12 @@ import { useLocale, useTranslations } from 'next-intl';
 // Funkcija za dohvatanje bloga po slug-u i jeziku
 async function fetchBlogBySlug(slug, locale) {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?filters[slug][$eq]=${slug}&locale=${locale}&populate=*`, {
-      headers: {
-        'Authorization': `Bearer ${process.env.NEXT_PUBLIC_REST_API_KEY}`, // Dodaj API token ovde
-      },
-    });
+    const res = await fetch(`/api/blogs/${slug}?locale=${locale}`); // Pozivamo našu API rutu
     if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
     }
     const data = await res.json();
-    if (data?.data?.length === 0) {
-      console.error(`No blog found for slug: ${slug} and locale: ${locale}`);
-      return null;
-    }
-    return data;
+    return data; // Vraćamo pojedinačni blog
   } catch (error) {
     console.error('Fetch error:', error);
     return null;
@@ -38,8 +30,8 @@ const BlogDetail = () => {
     if (slug) {
       const getBlogDetail = async () => {
         const blogData = await fetchBlogBySlug(slug, locale); // Dohvati blog koristeći slug i jezik
-        if (blogData?.data?.length > 0) {
-          setBlog(blogData.data[0]); // Postavi blog
+        if (blogData) {
+          setBlog(blogData); // Postavi blog
         } else {
           console.error(`No blog found for slug: ${slug} and locale: ${locale}`);
         }
@@ -50,14 +42,15 @@ const BlogDetail = () => {
   }, [slug, locale]);
 
   if (!blog) {
-    return <div className='flex items-center justify-center text-accent'>
-      {t('loading')}
-      </div>;
+    return (
+      <div className='flex items-center justify-center text-accent'>
+        {t('loading')}
+      </div>
+    );
   }
 
   const thumbnailUrl = blog?.thumbnail?.[0]?.formats?.thumbnail?.url;
 
- 
   return (
     <div className='px-10 md:px-20 py-8'>
       <h1 className='text-[24px] uppercase font-bold mb-16 text-center text-accent'>
@@ -79,11 +72,9 @@ const BlogDetail = () => {
       <div className='mt-12 text-gray dark:text-white flex justify-center items-center flex-col gap-4 bg-card-bg-light dark:bg-card-bg-dark rounded-md shadow-lg shadow-accent dark:shadow-accentDark'>
         {blog?.description ? (
           blog.description.map((descItem, index) => {
-            if (descItem.type === "paragraph") {
+            if (descItem.type === 'paragraph') {
               return (
-                <p
-                 className='mx-6 my-5'
-                 key={index}>
+                <p className='mx-6 my-5' key={index}>
                   {descItem.children?.map((child, childIndex) => (
                     <span key={childIndex}>{child.text}</span>
                   ))}
@@ -91,9 +82,9 @@ const BlogDetail = () => {
               );
             }
 
-            if (descItem.type === "image" && descItem.image) {
+            if (descItem.type === 'image' && descItem.image) {
               const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${descItem.image.formats?.large?.url || descItem.image.url}`;
-              const altText = descItem.alternativeText || "Image";
+              const altText = descItem.alternativeText || 'Image';
 
               return (
                 <Image
@@ -103,7 +94,7 @@ const BlogDetail = () => {
                   height={100}
                   width={200}
                   priority={false}
-                  className="my-4 w-1/3 rounded-lg"
+                  className='my-4 w-1/3 rounded-lg'
                 />
               );
             }
@@ -112,8 +103,8 @@ const BlogDetail = () => {
           })
         ) : (
           <p className='flex items-center justify-center text-red-400'>
-                  {t('available')}
-           </p>
+            {t('available')}
+          </p>
         )}
       </div>
     </div>
