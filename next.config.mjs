@@ -21,6 +21,11 @@ const nextConfig = {
             hostname: "pbs.twimg.com",
             
           },
+          {
+            protocol: "https",
+            hostname: "api.hedgehogwebdev.com",
+            
+          },
           
         ],
       },
