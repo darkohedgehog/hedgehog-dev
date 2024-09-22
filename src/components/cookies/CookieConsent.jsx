@@ -22,7 +22,7 @@ const CookieConsent = () => {
   if (!showConsent) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray text-accent p-4 flex flex-wrap justify-between items-center border-2">
+    <div className="fixed lg:bottom-0 md:bottom-0 bottom-24 left-0 right-0 bg-gray text-accent p-4 flex flex-wrap justify-between items-center border-2">
       <div className="flex items-center space-x-2 flex-1 mb-2 md:mb-0">
         <svg
           width="24"
