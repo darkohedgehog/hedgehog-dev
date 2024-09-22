@@ -11,7 +11,7 @@ const Socials = () => {
         <Link href={"https://github.com/darkohedgehog"} target="blank" className="hover:text-accent transition-all duration-300" prefetch={true}>
         <SiGithub className="w-4 h-4" />
         </Link>
-        <Link href={"https://www.instagram.com/"} target="blank" className="hover:text-accent transition-all duration-300" prefetch={true}> 
+        <Link href={"https://www.instagram.com/hedgehog_web_developer/"} target="blank" className="hover:text-accent transition-all duration-300" prefetch={true}> 
         <FaInstagram className="w-4 h-4"  />
         </Link>
         <Link href={"mailto:zivic.darko79@gmail.com"} className="hover:text-accent transition-all duration-300">
