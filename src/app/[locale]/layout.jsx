@@ -7,12 +7,52 @@ import LangSwitch from '@/components/header/LangSwitch';
 import HeaderTop from '@/components/header/HeaderTop';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import siteMetadata from '../utils/siteMetaData';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hedgehog Web Developer",
-  description: "Izrada web aplikacija",
+  metadataBase: siteMetadata.siteUrl, 
+  title: {
+    template: `%s | ${siteMetadata.title}`,
+    default: siteMetadata.title,
+  },
+  description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [
+      {
+        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`, // Full URL for social banner
+        width: 1200, // Default width for social banners
+        height: 630, // Default height for social banners
+        alt: siteMetadata.title,
+      },
+    ],
+    locale: siteMetadata.locale,
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    images: [`${siteMetadata.siteUrl}${siteMetadata.socialBanner}`], // Full URL for social banner
+    site: '@Zivic_Darko',
+  },
 };
 
 export default async function LocaleLayout({ children, params: { locale } }) {
@@ -21,6 +61,10 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      </head>
       <body className={`${inter.className} min-h-screen relative`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
