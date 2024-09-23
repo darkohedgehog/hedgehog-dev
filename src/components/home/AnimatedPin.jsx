@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { PinContainer } from "../ui/3d-pin";
+import { PinContainer } from "../ui/Pin";
 import Link from "next/link";
 import Image from "next/image";
 import Img1 from '@/assets/projects/elektro.png';
