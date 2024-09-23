@@ -9,6 +9,7 @@ import Img3 from '@/assets/projects/portfolio1.jpg';
 import Img4 from '@/assets/projects/sitoreklam.png';
 import { useTranslations } from 'next-intl';
 
+
 export function AnimatedPin() {
   const t = useTranslations('AnimatedPin');
   const projects = [
