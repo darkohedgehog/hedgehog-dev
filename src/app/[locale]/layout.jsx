@@ -6,8 +6,12 @@ import { ThemeProvider } from "@/components/theme-provider";
 import LangSwitch from '@/components/header/LangSwitch';
 import HeaderTop from '@/components/header/HeaderTop';
 import Nav from '@/components/Nav';
-import Footer from '@/components/Footer';
 import siteMetadata from '../utils/siteMetaData';
+import dynamic from 'next/dynamic';
+
+const Footer = dynamic(() => import('@/components/Footer'), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 

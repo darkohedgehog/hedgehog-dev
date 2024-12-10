@@ -1,111 +1,117 @@
-"use client"
+"use client";
 import Link from 'next/link'
-import React from 'react'
 import { RiMessengerLine, RiLinkedinBoxFill, RiNextjsFill } from "react-icons/ri";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { SiStrapi, SiGithub } from "react-icons/si";
 import { GiHedgehog } from "react-icons/gi";
-import Logo from './logo/Logo';
-import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
+  const t = useTranslations("FooterData");
+  const pathSegments = pathname.split("/");
+  const currentLocale = pathSegments[1] || "hr";
 
-    const pathname = usePathname();
-    const pathSegments = pathname.split('/');
-    const currentLocale = pathSegments[1] || 'hr'; // Default to 'hr' if no locale is found
-  
-    const t = useTranslations('FooterData');
-    // nav data
-    const navData = [
-      { name: `${t('privacy')}`, path: '/privacy' },
-      { name: `${t('complaint')}`, path: '/complaint'},
-      { name: `${t('contact')}`, path: '/contact'},
-    ];
+
   return (
     <>
-      <footer className="bg-card-bg-light dark:bg-card-bg-dark rounded-xl shadow bottom-0 w-full mx-1">
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-            <Link href={"/"} className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <Logo />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-accentDark"></span>
-            </Link>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-accentDark">
-                <li className='flex items-center gap-3'>
-                   {navData.map((link, index) => {
-                    const localizedPath = `/${currentLocale}${link.path === '/' ? '' : link.path}`;
-                    return (
-                        <Link
-                        href={localizedPath}
-                        key={index}
-                        prefetch={true}
-                        className={`${localizedPath === pathname}flex items-center hover:text-accent transition-all duration-300`}
-                      >
-                        {link.name}
-                     </Link>
-                    )
-                   })}
+      <div className="w-full bg-card-bg-light dark:bg-card-bg-dark">
+        <div className="flex items-center justify-center gap-8">
+          <Link href={`/${currentLocale}/`} className="flex items-center mt-6 justify-center">
+          <Image
+            src={'/logo-transparent.png'}
+            className="h-10 w-10 bg-cover"
+            alt="Logo"
+            width={40}
+            height={40}
+            priority={false}
+          />
+          </Link>
+          <ul className="flex justify-center items-center font-semibold text-[16px] mt-6 text-gray dark:text-accentDark gap-6 min-w-32">
+                <li>
+                    <Link href={`/${currentLocale}/privacy`} className="hover:underline">
+                        {t('privacy')}
+                    </Link>
+                </li>
+                <li>
+                    <Link href={`/${currentLocale}/complaint`} className="hover:underline">
+                    {t('complaint')}
+                    </Link>
+                </li>
+                <li>
+                    <Link href={`/${currentLocale}/contact`} className="hover:underline">
+                    {t('contact')}
+                    </Link>
                 </li>
             </ul>  
         </div>
-        <div className='flex items-center justify-center my-16 flex-col'>
-            <h3 className='text-accent dark:text-accentDark text-sm mb-4 font-semibold'>
-                {t('title')}
-                </h3>
-        <span className="inline-flex mx-4">
-                  <Link 
-                  className="text-blue-500" 
-                  href={'https://github.com/darkohedgehog'} target='blank'>
-                  <SiGithub className='h-6 w-6' />
-                  </Link>
-                  <Link 
-                  className="text-blue-500 mx-2" 
-                  href={'https://www.facebook.com/messages/t/100074828598715/?locale=hr_HR'}
-                  target='blank'>
-                  <RiMessengerLine className='h-6 w-6' />
-                  </Link>
-                  <Link 
-                  className="mx-2 text-blue-500" 
-                  href={'mailto:zivic.darko79@gmail.com'} target='blank'>
-                  <MdOutlineAlternateEmail className='h-6 w-6' />
-                  </Link>
-                  <Link 
-                  className="text-blue-500 mx-2" 
-                  href={'https://www.linkedin.com/in/darko-%C5%BEivi%C4%87/'} target='blank'>
-                  <RiLinkedinBoxFill className='h-6 w-6' />
-                  </Link>
-                </span>
-                </div>
-        <div className="flex items-center justify-center gap-2 my-3 text-sm text-gray-500 sm:text-center dark:text-accentDark"> 
-         Powered by 
-         <Link href={'https://nextjs.org/'} target='blank'>
-         <RiNextjsFill className='w-6 h-6' />
-         </Link>
-         &
-         <Link href={'https://strapi.io/'} target='blank'>
-         <SiStrapi className='w-5 h-5' />
-         </Link>
+        <div className='flex items-center justify-center my-12 flex-col'>
+          <h3 className='text-accent dark:text-accentDark text-sm mb-4 font-semibold'>
+            {t('title')}
+          </h3>
+          <span className="inline-flex mx-4 gap-2">
+            <a 
+              className="text-blue-500" 
+              href='https://github.com/darkohedgehog' 
+              target='_blank' 
+              rel="noopener noreferrer"
+            >
+              <SiGithub className='h-6 w-6' />
+            </a>
+            <a
+              className="text-blue-500" 
+              href='https://www.facebook.com/messages/t/100074828598715/?locale=hr_HR'
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <RiMessengerLine className='h-6 w-6' />
+            </a>
+            <a 
+              className="text-blue-500" 
+              href='mailto:zivic.darko79@gmail.com' 
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <MdOutlineAlternateEmail className='h-6 w-6' />
+            </a>
+            <a 
+              className="text-blue-500"
+              href='https://www.linkedin.com/in/darko-%C5%BEivi%C4%87/' 
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <RiLinkedinBoxFill className='h-6 w-6' />
+            </a>
+          </span>
         </div>
-        <div className="flex items-center justify-center gap-2 my-6 text-sm text-gray-500 sm:text-center dark:text-accentDark"> 
-         Developed by Hedgehog
-         <GiHedgehog className='w-6 h-6' />
+        <div className="flex items-center justify-center gap-2 my-3 text-sm text-gray text-center dark:text-accentDark"> 
+          Powered by 
+          <a href='https://nextjs.org/' target='_blank' rel="noopener noreferrer">
+            <RiNextjsFill className='w-6 h-6' />
+          </a>
+          &
+          <a href='https://strapi.io/' target='_blank' rel="noopener noreferrer">
+            <SiStrapi className='w-5 h-5' />
+          </a>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-accentDark"> 
-        © {new Date().getFullYear()} Hedgehog. Sva prava zadržana. 
-        <Link href={"/"} className="hover:underline">
-        </Link> 
-        <div className="flex items-center justify-center gap-2 my-6 text-sm text-gray-500 sm:text-center dark:text-accentDark"> 
-         <Link href={'/sitemap.xml'} target='blank'>
-            sitemap.xml
-         </Link>
+        <div className="flex items-center justify-center gap-2 my-6 text-sm text-gray text-center dark:text-accentDark"> 
+          Developed by Hedgehog
+          <GiHedgehog className='w-6 h-6' />
         </div>
-        </span>
-    </div>
-  </footer>
+        <hr className="my-6 border-gray mx-auto" />
+        <div className="block text-sm text-gray text-center dark:text-accentDark"> 
+          © {new Date().getFullYear()} Hedgehog. Sva prava zadržana.
+          <div className="flex items-center justify-center gap-2 mt-6 text-sm text-gray text-center dark:text-accentDark"> 
+            <a href='/sitemap.xml' target='_blank' rel="noopener noreferrer" className='mb-28'>
+              sitemap.xml
+            </a>
+          </div>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -6,7 +6,7 @@ import Image from "next/image";
 import Img1 from '@/assets/projects/elektro.png';
 import Img2 from '@/assets/projects/dizajn.png';
 import Img3 from '@/assets/projects/portfolio1.jpg';
-import Img4 from '@/assets/projects/sitoreklam.png';
+import Img4 from '@/assets/projects/social-media.png';
 import { useTranslations } from 'next-intl';
 
 
@@ -38,12 +38,12 @@ export function AnimatedPin() {
       technologies: ["Vite", "TailwindCss", "Framer Motion"],
     },
     {
-      title: "Sitoreklam",
+      title: "Kreditni savetnik",
       description: (<span>{t('description4')}</span>),
       image: Img4,
-      github: "https://github.com/darkohedgehog/sitoreklam",
-      live: "https://sitoreklam.vercel.app/",
-      technologies: ["Vite", "Three.js", "TailWindCss"],
+      github: "https://github.com/darkohedgehog/kreditni-savetnik",
+      live: "https://savetnikzakredite.vercel.app/",
+      technologies: ["Next.js", "Shadcn/ui", "TailWindCss"],
     },
   ];
 
