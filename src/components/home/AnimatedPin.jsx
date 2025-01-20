@@ -7,6 +7,7 @@ import Img1 from '@/assets/projects/elektro.png';
 import Img2 from '@/assets/projects/dizajn.png';
 import Img3 from '@/assets/projects/portfolio1.jpg';
 import Img4 from '@/assets/projects/social-media.png';
+import Img5 from '@/assets/projects/mi-go-malina.webp'
 import { useTranslations } from 'next-intl';
 
 
@@ -30,12 +31,12 @@ export function AnimatedPin() {
       technologies: ["Next.js", "Sanity","Framer Motion"],
     },
     {
-      title: "Portfolio",
-      description: (<span>{t('description3')}</span>),
-      image: Img3,
-      github: "https://github.com/darkohedgehog/Dragana-portfolio",
-      live: "https://dragana-portfolio.vercel.app/",
-      technologies: ["Vite", "TailwindCss", "Framer Motion"],
+      title: "Mi-Go Kombucha",
+      description: (<span>{t('description5')}</span>),
+      image: Img5,
+      github: "https://github.com/darkohedgehog/mi-go",
+      live: "https://www.migo-kombucha.com",
+      technologies: ["Next.js", "Shadcn/ui", "TailWindCss", "Framer Motion"],
     },
     {
       title: "Kreditni savetnik",
@@ -44,6 +45,14 @@ export function AnimatedPin() {
       github: "https://github.com/darkohedgehog/kreditni-savetnik",
       live: "https://savetnikzakredite.vercel.app/",
       technologies: ["Next.js", "Shadcn/ui", "TailWindCss"],
+    },
+    {
+      title: "Portfolio",
+      description: (<span>{t('description3')}</span>),
+      image: Img3,
+      github: "https://github.com/darkohedgehog/Dragana-portfolio",
+      live: "https://dragana-portfolio.vercel.app/",
+      technologies: ["Vite", "TailwindCss", "Framer Motion"],
     },
   ];
 
