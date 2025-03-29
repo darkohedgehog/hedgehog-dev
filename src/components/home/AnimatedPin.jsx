@@ -7,7 +7,8 @@ import Img1 from '@/assets/projects/elektro.png';
 import Img2 from '@/assets/projects/dizajn.png';
 import Img3 from '@/assets/projects/portfolio1.jpg';
 import Img4 from '@/assets/projects/social-media.png';
-import Img5 from '@/assets/projects/mi-go-malina.webp'
+import Img5 from '@/assets/projects/mi-go-malina.webp';
+import Img6 from '@/assets/projects/skc-banner.png';
 import { useTranslations } from 'next-intl';
 
 
@@ -37,6 +38,14 @@ export function AnimatedPin() {
       github: "https://github.com/darkohedgehog/mi-go",
       live: "https://www.migo-kombucha.com",
       technologies: ["Next.js", "Shadcn/ui", "TailWindCss", "Framer Motion"],
+    },
+    {
+      title: "Srpski kulturni centar Vukovar",
+      description: (<span>{t('description6')}</span>),
+      image: Img6,
+      github: "https://github.com/darkohedgehog/skc-frontend",
+      live: "https://www.skcvukovar.hr",
+      technologies: ["Next.js", "TailWindCss", "Framer Motion","Strapi"],
     },
     {
       title: "Kreditni savetnik",
